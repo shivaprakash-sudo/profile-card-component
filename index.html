@@ -15,31 +15,36 @@
 
     <title>Frontend Mentor | Profile card component</title>
   </head>
-  <body>
+  <body class="flex col items-center">
     <main>
       <article class="card">
-        <div class="card__bg-pattern"></div>
-        <div class="card__body">
+        <div class="card__bg-pattern">
+          <img src="./images/bg-pattern-card.svg" alt="" />
           <img
             class="avatar"
             src="./images/image-victor.jpg"
             alt="Victor Crest"
           />
-          <h2 class="text-heading">
-            Victor Crest <span class="text-gray">26</span>
-          </h2>
-          <p class="text-gray">London</p>
-          <hr />
-          <div>
-            <div>
+        </div>
+        <div class="card__body flex col">
+          <div class="profile flex col">
+            <div class="flex items-center text-heading">
+              <h2>Victor Crest</h2>
+              <span class="text-gray">26</span>
+            </div>
+            <p class="text-gray text-center text-md">London</p>
+          </div>
+          <!-- <hr /> -->
+          <div class="stats flex">
+            <div class="text-center">
               <h3 class="text-heading">80K</h3>
               <p class="text-sm text-gray">Followers</p>
             </div>
-            <div>
+            <div class="text-center">
               <h3 class="text-heading">803K</h3>
               <p class="text-sm text-gray">Likes</p>
             </div>
-            <div>
+            <div class="text-center">
               <h3 class="text-heading">1.4K</h3>
               <p class="text-sm text-gray">Photos</p>
             </div>
